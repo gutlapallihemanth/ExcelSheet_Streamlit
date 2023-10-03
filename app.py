@@ -189,7 +189,7 @@ st.markdown("<style>div.block-container{padding-top:1rem;}</style>", unsafe_allo
 
 
 
-fl = st.file_uploader(":file_folder: Upload a file", type=(["csv","txt","xlsx","xls"]) )
+fl = st.file_uploader(":file_folder: Upload a file", type=(["csv","txt","xlsx","xls"]),help="You can find Sample file here. https://github.com/gutlapallihemanth/ExcelSheet_Streamlit/blob/main/Sample_Superstore.csv" )
 
 if fl is not None:
     filename = fl.name
