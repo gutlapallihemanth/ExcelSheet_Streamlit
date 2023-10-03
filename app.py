@@ -380,7 +380,7 @@ st.plotly_chart(data1,use_container_width=True)
 ## Download overall dataset
 
 with st.expander("View Data"):
-    st.write(filtered_df.style.background_gradient(cmap= "Oranges",subset=['Sales', 'Profit', 'Quantity','Discount']))
+    st.write(filtered_df.iloc[:20,:].style.background_gradient(cmap= "Oranges",subset=['Sales', 'Profit', 'Quantity','Discount']))
 
 
 ## Download Original Dataset
